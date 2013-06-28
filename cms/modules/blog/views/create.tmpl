@@ -1,0 +1,44 @@
+{% extends 'page.tmpl' %}
+{#
+#+--------------------------------------------------------------------+
+#| create.tmpl
+#+--------------------------------------------------------------------+
+#| Copyright DarkOverlordOfData (c) 2012 - 2013
+#+--------------------------------------------------------------------+
+#|
+#| This file is a part of Exspresso
+#|
+#| Exspresso is free software; you can copy, modify, and distribute
+#| it under the terms of the MIT License
+#|
+#+--------------------------------------------------------------------+
+#
+# This template supplies the main content
+#
+#}
+{% block title %}{% parent %} | Create {% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+    {% form_open form.action %}
+    {% form_hidden form.hidden %}
+    <div class="control-group">
+        {% form_label 'Title:' 'title' "class='control-label'" %}
+        {% form_input 'title'  doc.title %}
+    </div>
+    <div class="control-group">
+        {% form_label 'Category:' 'category' "class:'control-label'" %}
+        {% form_dropdown 'category' blogs.getCategoryNames() category "size=1" %}
+    </div>
+    <div class="control-group">
+        <textarea name='blog' id='blog' class='ckeditor' rows=24 cols=60></textarea>
+    </div>
+    <div class="control-group">
+        {% form_submit 'save' 'Save' "class='btn btn-primary'" %}
+        {% form_submit 'cancel' 'Cancel' "class='btn'" %}
+    </div>
+    {% form_close %}
+</div>
+
+{% endblock %}

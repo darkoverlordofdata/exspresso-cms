@@ -1,0 +1,14 @@
+{% if $error !== false || $info !== false %}
+<hr>
+<div class="clearfix"></div>
+{% if $error !== false %}
+<div class='alert alert-error'>
+<p><b>Error:</b> {{ $error }}</p>
+</div>
+{% endif %}
+{% if $info !== false %}
+<div class='alert alert-info'>
+<p><b>Info:</b> {{ $info }}</p>
+</div>
+{% endif %}
+{% endif %}

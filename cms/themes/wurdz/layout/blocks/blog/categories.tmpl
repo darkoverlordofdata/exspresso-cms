@@ -1,0 +1,16 @@
+{% if categories %}
+<article class="widget-blogcategories widget">
+    <header>
+        <h1>Categories</h1>
+    </header>
+    <ul>
+        {%- for category in categories -%}
+        <li><a href="/blogs/category/{{ category.id }}">
+            {%- if category.id == category_id %}<em>{% endif -%}
+            {{ category.name }}
+            {%- if category.id == category_id %}</em>{% endif -%}
+        </a></li>
+        {%- endfor -%}
+    </ul>
+</article>
+{% endif %}

@@ -1,0 +1,64 @@
+{% extends 'page.tmpl' %}
+{#
+#+--------------------------------------------------------------------+
+#| index.tmpl
+#+--------------------------------------------------------------------+
+#| Copyright DarkOverlordOfData (c) 2012 - 2013
+#+--------------------------------------------------------------------+
+#|
+#| This file is a part of Exspresso
+#|
+#| Exspresso is free software; you can copy, modify, and distribute
+#| it under the terms of the MIT License
+#|
+#+--------------------------------------------------------------------+
+#
+# List of blog articles
+#
+#}
+{% block title %}{% parent %} | Blog {% endblock %}
+
+{% block content %}
+
+<div class="offset1 span6 zone-content">
+
+    <ul class="blog-posts">
+        {% for doc in docs %}
+        <li>
+            <article class="blog-post">
+                <div class="published">{{ doc.created_on|date('D d, Y') }}</div>
+                <h1><a href="/blog/show/{{ doc.id }}">{{ doc.title }}</a></h1>
+                <p>{% ellipsize doc.body 255 %}&nbsp;<a href="/blog/show/{{ doc.id }}">more</a></p>
+
+                <p class="tags">
+                    <span>Tags:</span>
+                    {% for tag in doc.tags.split(','): %}
+                    <a href="#">{{ tag }}</a>
+                    {% if !loop.last %}, {% endif %}
+                    {% endfor %}
+                </p>
+            </article>
+        </li>
+        {% endfor %}
+
+    </ul>
+
+    <div class="blog-pagination">
+
+        <!--
+         <div class="newer">
+            <a href="#">« Newer posts</a>
+        </div> -->
+
+        <div class="older">
+            <a href="#">Older posts »</a>
+        </div>
+    </div>
+
+</div>
+
+<aside id="aside-right" class="aside-column offset1 span3">
+    {% include 'regions/sidebar.tmpl' %}
+</aside>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'page.tmpl' %}
+{#
+#+--------------------------------------------------------------------+
+#| edit.tmpl
+#+--------------------------------------------------------------------+
+#| Copyright DarkOverlordOfData (c) 2012 - 2013
+#+--------------------------------------------------------------------+
+#|
+#| This file is a part of Exspresso
+#|
+#| Exspresso is free software; you can copy, modify, and distribute
+#| it under the terms of the MIT License
+#|
+#+--------------------------------------------------------------------+
+#
+# Show a single blog
+#
+#}
+{% block title %}{% parent %} | Login {% endblock %}
+
+{% block content %}
+
+<div class="hero-unit">
+    <div class="row">
+        <div class="span4">
+            {%- form_open '/admin/index' "class: 'form-signin'" %}
+            <h2 class="form-signin-heading">Please sign in</h2>
+            {%- form_input 'username' username "class:'input-block-level', placeholder:'Email address', autofocus:'true'" %}
+            {%- form_password 'password' '' "class:'input-block-level', placeholder:'Password'" %}
+            <label class="checkbox">
+                {%- form_checkbox 'remember' 'remember' false %} Remember me
+            </label>
+            {# %- form_submit 'login' 'Sign in' "class:'btn btn-large btn-success'" % #}
+            <button name='login' type='submit'>Sign in</button>
+            {%- form_close %}
+        </div>
+    </div>
+</div>
+{% endblock %}

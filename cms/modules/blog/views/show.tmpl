@@ -1,0 +1,44 @@
+{% extends 'page.tmpl' %}
+{#
+#+--------------------------------------------------------------------+
+#| edit.tmpl
+#+--------------------------------------------------------------------+
+#| Copyright DarkOverlordOfData (c) 2012 - 2013
+#+--------------------------------------------------------------------+
+#|
+#| This file is a part of Exspresso
+#|
+#| Exspresso is free software; you can copy, modify, and distribute
+#| it under the terms of the MIT License
+#|
+#+--------------------------------------------------------------------+
+#
+# Show a single blog
+#
+#}
+{% block title %}{% parent %} | Edit {% endblock %}
+
+{% block content %}
+
+<div class="offset1 span6 zone-content">
+    <article>
+
+        <div class="published">{{ doc.created_on|date('D d, Y') }}</div>
+        <h1 id="contenteditable" contenteditable="{{ contenteditable }}">{{ doc.title }}</h1>
+        <div>
+            <p class='lead'>{% abstract doc.body %}</p>
+            <div id="contenteditable" contenteditable="{{ contenteditable }}">{{ doc.body }}</div>
+        </div>
+    </article>
+
+    <div class="clearfix"></div>
+
+    {# % include 'blocks/blog/comments.tmpl' % #}
+</div>
+
+<aside id="aside-right" class="aside-column offset1 span3">
+    {% include 'regions/sidebar.tmpl' %}
+</aside>
+{% endblock %}
+
+

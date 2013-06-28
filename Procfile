@@ -1,0 +1,1 @@
+web: node exspresso.js --profile --install --db postgres

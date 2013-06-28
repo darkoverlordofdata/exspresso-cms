@@ -1,0 +1,43 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* Custom container */
+.container-narrow {
+    margin: 0 auto;
+    max-width: 700px;
+    max-width: 980px;
+}
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    margin: 10px 0;
+}
+.jumbotron h1 {
+    font-size: 56px;
+    line-height: 1;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 60px 0;
+}
+.marketing p + h4 {
+    margin-top: 28px;
+}
+#exspresso_profiler {
+    font-size: 90%;
+    width: 80%;
+    left: 10%;
+    top: 40%;
+    z-index: 1050;
+    margin-left: 0px;
+
+}
+#exspresso_profiler-body {
+    max-height: 600px;
+}

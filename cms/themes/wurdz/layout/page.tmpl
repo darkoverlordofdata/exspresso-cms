@@ -1,0 +1,32 @@
+{% extends 'html.tmpl' %}
+{#
+#+--------------------------------------------------------------------+
+#| page.tmpl
+#+--------------------------------------------------------------------+
+#| Copyright DarkOverlordOfData (c) 2012 - 2013
+#+--------------------------------------------------------------------+
+#|
+#| This file is a part of Exspresso
+#|
+#| Exspresso is free software; you can copy, modify, and distribute
+#| it under the terms of the MIT License
+#|
+#+--------------------------------------------------------------------+
+#
+# This is the base page format
+#
+#}
+{% block page %}
+<div class="container">
+
+    {% include 'regions/header.tmpl' %}
+    <hr>
+    <div class="row main-content">
+        {% block content %}{% endblock %}
+    </div>
+    {% include 'blocks/message.tmpl' %}
+    <hr>
+    {% include 'regions/footer.tmpl' %}
+
+</div>  <!-- End Container -->
+{% endblock %}
