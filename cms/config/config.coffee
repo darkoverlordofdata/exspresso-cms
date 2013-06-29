@@ -8,8 +8,8 @@ module.exports =
   #| Enter your GA account and domain info:
   #|
   #|
-  ga_account: 'UA-41153554-1'
-  ga_domain: 'darkoverlordofdata.com'
+  ga_account: ''
+  ga_domain: ''
   #|
   #|--------------------------------------------------------------------------
   #| Site Name
@@ -18,7 +18,7 @@ module.exports =
   #| Title for your site
   #|
   #|
-  site_name: 'Dark Overlord of Data'
+  site_name: 'Exspresso CMS'
 
   #|
   #|--------------------------------------------------------------------------
@@ -26,9 +26,8 @@ module.exports =
   #|--------------------------------------------------------------------------
   #|
   #| A Catchy Jingle
-  #|  Until there is something darker, black will do.
   #|
-  site_slogan: "\'Hello Earthling\'"
+  site_slogan: ""
 
   #|
   #|--------------------------------------------------------------------------

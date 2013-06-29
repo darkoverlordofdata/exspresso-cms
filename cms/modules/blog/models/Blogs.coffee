@@ -325,103 +325,9 @@ module.exports = class cms.modules.blog.models.Blogs extends system.core.Model
           type: 'TEXT'
 
 
+
       $table.addData
         id: 1
-        author_id: 2
-        category_id: 1
-        status: 1
-        created_on: '2012-03-13 09:22:20'
-        updated_on: '2013-03-13 09:22:20'
-        updated_by: 2
-        title: 'Katra'
-        tags: ''
-        body: """
-              <p>
-              <span style="font-size:28px;">Katra </span>is a basic language interpreter written in coffee-script.</p>
-              <div>
-              &nbsp;</div>
-              <div>
-              <span style="font-size:28px;">Katra </span>has one goal - to run StarTrek.bas games from the</div>
-              <div>
-              golden age of basic programming.</div>
-              <div>
-              &nbsp; &nbsp;&nbsp;</div>
-              <div>
-              &nbsp;</div>
-              <div>
-              &nbsp;</div>
-              <div>
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ------*------ &nbsp;&nbsp;</div>
-              <div>
-              &nbsp; &nbsp; ------------- &nbsp; `--- &nbsp;------&#39; &nbsp;&nbsp;</div>
-              <div>
-              &nbsp; &nbsp; `-------- --&#39; &nbsp; &nbsp; &nbsp;/ / &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-              <div>
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\\\\------- &nbsp;-- &nbsp; &nbsp; &nbsp; &nbsp;</div>
-              <div>
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;-----------&#39; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-              <div>
-              &nbsp;</div>
-              <div>
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;NCC - 1701</div>
-              <div>
-              &nbsp;</div>
-              <div>
-              &nbsp;</div>
-              <div>
-              &gt; <a href="/katra">Beam me up, Scotty!</a></div>
-              <div>
-              &nbsp;</div>
-              <div>
-              &nbsp;</div>
-              """
-
-      $table.addData
-        id: 2
-        author_id: 2
-        category_id: 1
-        status: 1
-        created_on: '2013-03-13 09:22:20'
-        updated_on: '2013-03-13 09:22:20'
-        updated_by: 2
-        title: 'How Many Space Needles Does It Take?'
-        tags: ''
-        body: """
-              <p>
-              I am .0099 Space Needles tall, and yet I weight a scant .00004 Space Needles.</p>
-              <p>
-              How many space needles tall are you?</p>
-              <p>
-              &nbsp;</p>
-              <p>
-              The Space Needle is 605 ft tall and weighs 9,550 tons.</p>
-              """
-
-      $table.addData
-        id: 3
-        author_id: 2
-        category_id: 1
-        status: 1
-        created_on: '2013-06-01 09:22:20'
-        updated_on: '2013-06-01 09:22:20'
-        updated_by: 2
-        title: 'About'
-        tags: ''
-        body: """
-              <h3>Dark Overlord of Data is:</h3>
-
-              <p><strong>a web page</strong></p>
-
-              <p><em>created using <a href="http://exspresso.aws.af.cm/">Exspresso</a></em></p>
-
-              <p><strong>bruce davidson</strong></p>
-
-              <p><em>a software developer who lives in seattle with his wife and daughter, two cats, one dog, and an electric guitar</em></p>
-              """
-
-      ###
-      $table.addData
-        id: 4
         author_id: 2
         category_id: 1
         status: 1
@@ -436,7 +342,7 @@ module.exports = class cms.modules.blog.models.Blogs extends system.core.Model
               """
 
       $table.addData
-        id: 5
+        id: 2
         author_id: 2
         category_id: 1
         status: 1
@@ -451,7 +357,7 @@ module.exports = class cms.modules.blog.models.Blogs extends system.core.Model
               """
 
       $table.addData
-        id: 6
+        id: 3
         author_id: 2
         category_id: 1
         status: 1
@@ -467,7 +373,7 @@ module.exports = class cms.modules.blog.models.Blogs extends system.core.Model
               """
 
       $table.addData
-        id: 7
+        id: 4
         author_id: 2
         category_id: 1
         status: 1
@@ -502,4 +408,4 @@ module.exports = class cms.modules.blog.models.Blogs extends system.core.Model
               </ul>
               </p>
               """
-      ###
+

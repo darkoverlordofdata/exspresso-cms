@@ -29,7 +29,7 @@
 
 DEFAULT_DRIVER  = 'postgres'
 DEFAULT_PORT    = 5432
-DEFAULT_PREFIX  = 'd16a_'
+DEFAULT_PREFIX  = 'cms_'
 
 
 credential = ($name) ->
@@ -82,7 +82,7 @@ credential = ($name) ->
       when 'password' then 'admin'
       when 'hostname' then 'localhost'
       when 'port'     then DEFAULT_PORT
-      when 'database' then 'exspresso'
+      when 'database' then 'cms'
 
 module.exports =
 
@@ -118,7 +118,7 @@ module.exports =
       stricton: false
 
     mysql:
-      url     : process.env.CLEARDB_DATABASE_URL ? "mysql://admin:admin@localhost:3306/exspresso"
+      url     : process.env.CLEARDB_DATABASE_URL ? "mysql://admin:admin@localhost:3306/cms"
       hostname: ''
       username: ''
       password: ''
@@ -136,7 +136,7 @@ module.exports =
       hostport: 3306
 
     postgres:
-      url     : process.env.HEROKU_POSTGRESQL_CHARCOAL_URL ? "postgres://demo:demo@localhost:5432/demo"
+      url     : process.env.HEROKU_POSTGRESQL_CHARCOAL_URL ? "postgres://admin:admin@localhost:5432/cms"
       hostname: ''
       username: ''
       password: ''
@@ -157,7 +157,7 @@ module.exports =
       hostname: ''
       username: ''
       password: ''
-      database: process.cwd()+'/d16a.sqlite'
+      database: process.cwd()+'/cms.sqlite'
       dbdriver: 'sqlite'
       dbprefix: ''
       db_debug: true
