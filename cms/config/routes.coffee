@@ -2,7 +2,7 @@ module.exports =
   #----------------------------------------------------------------------
   #          Route                                 Controller URI
   #----------------------------------------------------------------------
-  'default_controller'                  : 'Home/index' # "Home/index"
+  'default_controller'                  : 'Welcome/index' # "Home/index"
   
   '/home'                               : 'Home/index'
   '/mytest'                             : 'Welcome/test'
