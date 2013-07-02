@@ -332,7 +332,7 @@ module.exports =
   classpaths:
     system    : SYSPATH
     cms       : APPPATH
-    addins    : MODPATH
+    plugins   : MODPATH
 
   #|
   #|--------------------------------------------------------------------------

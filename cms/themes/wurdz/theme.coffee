@@ -36,23 +36,6 @@ exports.regions =
   analytics       : 'Google Analytics'
 
 
-#
-# Menu
-#
-# Defines the main page menu
-#
-exports.menu =
-  Blog    :
-    uri   : '/blog'
-    tip   : 'Blog'
-  Katra  :
-    uri   : '/katra'
-    tip   : 'Live Long And Prosper'
-  Admin   :
-    uri   : '/admin'
-    tip   : 'Login'
-
-
 
 #
 # Scripts

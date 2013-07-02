@@ -185,16 +185,16 @@
       "from": "async@"
     },
     "exspresso": {
-      "version": "0.10.16",
-      "from": "exspresso@",
+      "version": "0.10.17",
+      "from": "exspresso@~0.10.16",
       "dependencies": {
         "not-php": {
           "version": "0.3.14",
-          "from": "not-php@0.3.14"
+          "from": "not-php@"
         },
         "connect": {
-          "version": "2.7.11",
-          "from": "connect@2.7.11",
+          "version": "2.8.1",
+          "from": "connect@",
           "dependencies": {
             "qs": {
               "version": "0.6.5",
@@ -218,7 +218,7 @@
               "dependencies": {
                 "mime": {
                   "version": "1.2.9",
-                  "from": "mime@1.2.9"
+                  "from": "mime@~1.2.9"
                 },
                 "range-parser": {
                   "version": "0.0.4",
@@ -238,81 +238,85 @@
               "version": "0.0.1",
               "from": "pause@0.0.1"
             },
+            "uid2": {
+              "version": "0.0.2",
+              "from": "uid2@0.0.2"
+            },
             "debug": {
               "version": "0.7.2",
-              "from": "debug@0.7.2"
+              "from": "debug@*"
             }
           }
         },
         "cookie": {
           "version": "0.1.0",
-          "from": "cookie@0.1.0"
+          "from": "cookie@*"
         },
         "cookie-signature": {
           "version": "1.0.1",
-          "from": "cookie-signature@1.0.1"
+          "from": "cookie-signature@*"
         },
         "dispatch": {
           "version": "0.2.0",
-          "from": "dispatch@0.2.0"
+          "from": "dispatch@*"
         },
         "eco": {
           "version": "1.1.0-rc-3",
-          "from": "eco@1.1.0-rc-3",
+          "from": "eco@*",
           "dependencies": {
             "strscan": {
               "version": "1.0.1",
-              "from": "strscan@1.0.1"
+              "from": "strscan@>=1.0.1"
             }
           }
         },
         "marked": {
           "version": "0.2.9",
-          "from": "marked@0.2.9"
+          "from": "marked@*"
         },
         "format-number": {
           "version": "0.0.0",
-          "from": "format-number@0.0.0"
+          "from": "format-number@"
         },
         "moment": {
           "version": "2.0.0",
-          "from": "moment@2.0.0"
+          "from": "moment@*"
         },
         "sprintf": {
           "version": "0.1.1",
-          "from": "sprintf@0.1.1"
+          "from": "sprintf@*"
         },
         "glob": {
           "version": "3.2.1",
-          "from": "glob@3.2.1",
+          "from": "glob@*",
           "dependencies": {
             "minimatch": {
               "version": "0.2.12",
-              "from": "minimatch@0.2.12",
+              "from": "minimatch@~0.2.11",
               "dependencies": {
                 "lru-cache": {
                   "version": "2.3.0",
-                  "from": "lru-cache@2.3.0"
+                  "from": "lru-cache@2"
                 },
                 "sigmund": {
                   "version": "1.0.0",
-                  "from": "sigmund@1.0.0"
+                  "from": "sigmund@~1.0.0"
                 }
               }
             },
             "graceful-fs": {
-              "version": "1.2.1",
-              "from": "graceful-fs@1.2.1"
+              "version": "1.2.2",
+              "from": "graceful-fs@~1.2.0"
             },
             "inherits": {
               "version": "1.0.0",
-              "from": "inherits@1.0.0"
+              "from": "inherits@1"
             }
           }
         },
         "utf8": {
-          "version": "1.0.0",
-          "from": "utf8@1.0.0"
+          "version": "2.0.0",
+          "from": "utf8@*"
         }
       }
     }

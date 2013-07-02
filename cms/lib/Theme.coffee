@@ -156,7 +156,6 @@ module.exports = class cms.lib.Theme extends system.lib.Parser
 
 
 
-
   #
   # Use
   #
@@ -313,7 +312,8 @@ module.exports = class cms.lib.Theme extends system.lib.Parser
   # @return [Object] this
   #
   setMenu: ($menu) ->
-    @_menu = $menu
+    for $name, $item of $menu
+      @_menu[$name] = $item
 
   #
   # Use admin menu
@@ -482,8 +482,8 @@ module.exports = class cms.lib.Theme extends system.lib.Parser
     @_regions = @_theme.regions
     @_theme_type = @_theme.type ? ''
 
-    if @_menu?
-      @setMenu @_theme.menu
+    for $name, $module of @config.modules
+      @setMenu $module.menu
 
     if @_meta?
       @setMeta @_theme.meta

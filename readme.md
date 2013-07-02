@@ -1,7 +1,7 @@
 # Exspresso CMS
 
 
-##Featured Customizations
+## Administration and Theming
 
 * Redis output page caching
     * core/MyOutput.coffe

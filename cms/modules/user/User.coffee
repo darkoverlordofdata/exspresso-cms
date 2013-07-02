@@ -18,8 +18,27 @@
 
 module.exports = class User extends system.core.Module
 
-  name          : 'User'
-  description   : ''
-  path          : __dirname
-  active        : true
+  #
+  # property [String] name of this module
+  #
+  name: 'User'
+  #
+  # property [String] description of this module
+  #
+  description: ''
+  #
+  # property [String] path to this module
+  #
+  path: __dirname
+  #
+  # property [String] status of this module
+  #
+  active: true
+  #
+  # property [String] menu for this module
+  #
+  menu:
+    Admin:
+      uri: '/admin'
+      tip: 'Login'
 
