@@ -28,7 +28,7 @@
     "static-asset": "~0.5.2",
     "step": "0.0.5",
     "async": "~0.2.9",
-    "exspresso": "~0.10.17"
+    "exspresso": "~0.10.18"
   },
   "scripts": {
     "start": "node index --install",

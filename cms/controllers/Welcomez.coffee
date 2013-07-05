@@ -1,5 +1,5 @@
 #+--------------------------------------------------------------------+
-#| home.coffee
+#| welcome.coffee
 #+--------------------------------------------------------------------+
 #| Copyright DarkOverlordOfData (c) 2012 - 2013
 #+--------------------------------------------------------------------+
@@ -12,29 +12,27 @@
 #+--------------------------------------------------------------------+
 
 #
-#	  Home Page Controller
+#	Welcome Controller
 #
+# This is the default controller
 #
-#
-load_class APPPATH+'core/PublicController.coffee'
 
-module.exports = class Home extends cms.core.PublicController
+module.exports = class Welcome extends system.core.Controller
 
   #
   # Index
   #
-  # Display the home page
+  # Demo welcome page
   #
   # @access	public
   # @return [Void]
   #
   indexAction: ->
 
-    @load.model 'Blogs'
+    #@output.cache 5
+    @load.view 'welcome_message.eco', site_name: config_item('site_name')
 
-    @blogs.getLatest ($err, $blog) =>
+  testAction: ->
 
-      @theme.view 'home_page', $err ||
-        blog: $blog
-
-
+    #@output.cache 5
+    @load.view 'welcome_message.eco', site_name: config_item('site_name')

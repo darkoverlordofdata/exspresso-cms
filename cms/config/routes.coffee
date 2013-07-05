@@ -4,10 +4,8 @@ module.exports =
   #----------------------------------------------------------------------
   'default_controller'                  : 'Welcome/index' # "Home/index"
   
-  '/home'                               : 'Home/index'
-  '/mytest'                             : 'Welcome/test'
   '/welcome'                            : 'Welcome/index'
-  '/twiggy'                             : 'Twiggy/index'
+  '/readme'                             : 'Welcome/readme'
 
   '/admin'                              : 'Admin/index'
   '/admin/index'                        : 'Admin/index'

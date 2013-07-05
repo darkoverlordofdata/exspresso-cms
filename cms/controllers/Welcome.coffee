@@ -29,10 +29,17 @@ module.exports = class Welcome extends system.core.Controller
   #
   indexAction: ->
 
-    #@output.cache 5
-    @load.view 'welcome_message.eco', site_name: config_item('site_name')
+    @load.view 'welcome_message', site_name: config_item('site_name')
 
-  testAction: ->
+  #
+  # Read Me
+  #
+  # About Exspresso
+  #
+  # @access	public
+  # @return [Void]
+  #
+  readmeAction: ->
 
-    #@output.cache 5
-    @load.view 'welcome_message.eco', site_name: config_item('site_name')
+    @load.view 'readme', site_name: config_item('site_name')
+

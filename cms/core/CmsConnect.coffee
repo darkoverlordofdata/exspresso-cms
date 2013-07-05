@@ -12,11 +12,11 @@
 #+--------------------------------------------------------------------+
 
 #
-#	CmsConnect driver
+#	CmsConnect
 #
 #   An adapter to the connect server instance
 #
-#   This extension adds static asset caching
+#   This extension uses express.js and adds static asset caching
 #
 module.exports = class cms.core.CmsConnect extends system.core.Connect
 
@@ -26,8 +26,14 @@ module.exports = class cms.core.CmsConnect extends system.core.Connect
   driver: 'express' # Override the default value 'connect',
                     # express is required for 'static-assets' cacheing.
 
+  #
+  # @property [cms.lib.Assets] asset cotroller
+  #
   assets: null
 
+  #
+  # Load the asset controller
+  #
   constructor: ($controller) ->
 
     log_message 'debug', 'CmsConnect Initialized'
@@ -46,5 +52,6 @@ module.exports = class cms.core.CmsConnect extends system.core.Connect
   initialize_assets:($driver, $render) =>
 
     @assets.initialize @, $render
+    @app.use $driver.static("node_modules/exspresso/application/assets/")
     super $driver, $render
 
