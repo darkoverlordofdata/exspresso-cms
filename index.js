@@ -1,6 +1,6 @@
 /*
  *
- *	Boot Exspresso
+ *	Reference ExspressoCMS
  *
  */
 

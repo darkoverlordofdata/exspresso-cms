@@ -28,10 +28,10 @@
     "static-asset": "~0.5.2",
     "step": "0.0.5",
     "async": "~0.2.9",
-    "exspresso": "~0.10.18"
+    "exspresso": "~0.10.26"
   },
   "scripts": {
-    "start": "node index --install",
+    "start": "node cms   --install",
     "test": "cake test"
   },
   "repository": "git://github.com/darkoverlordofdata/exspresso-cms",

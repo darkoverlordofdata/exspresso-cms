@@ -1,6 +1,6 @@
 /*
  *
- *	Boot Exspresso
+ *	Boot ExspressoCMS
  *
  */
 require('coffee-script');
